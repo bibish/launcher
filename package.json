@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "git add dist -f && git commit -m \"Deploy to GitHub Pages\" && git subtree push --prefix dist origin gh-pages",
-    "deploy:clean": "rm -rf dist && yarn build && touch dist/.nojekyll && git add dist -f && git commit -m \"Clean deploy to GitHub Pages\" && git push origin --delete gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy:clean": "rm -rf dist && yarn build && touch dist/.nojekyll && git add dist -f && git commit -m \"Clean deploy to GitHub Pages\" || true && git push origin --delete gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.34",
