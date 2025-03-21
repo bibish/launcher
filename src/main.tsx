@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import Layout from "./components/Layout";
@@ -10,7 +10,7 @@ import TeamPage from "./pages/TeamPage";
 import FeaturesPage from "./pages/FeaturesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
